@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="6" name="pytest" skips="0" tests="16" time="0.609"><testcase classname="pytests.test_index" file="pytests/test_index.py" line="9" name="test_conda_environment_activated" time="0.0019459724426269531"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="12" name="test_yell_hello" time="0.0009098052978515625"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="16" name="test_whisper_hey" time="0.0008752346038818359"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="20" name="test_flatiorn_mantra" time="0.0007519721984863281"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="24" name="test_type_string" time="0.0028171539306640625"><failure message="AssertionError: type_string must be of type string
+assert &quot;i&apos;m a string&quot; == &lt;class &apos;str&apos;&gt;
+ +  where &lt;class &apos;str&apos;&gt; = type(&apos;HELLO, THERE&apos;)">def test_type_string():
+&gt;       assert type_string == type(&quot;HELLO, THERE&quot;), &quot;type_string must be of type string&quot;
+E       AssertionError: type_string must be of type string
+E       assert &quot;i&apos;m a string&quot; == &lt;class &apos;str&apos;&gt;
+E        +  where &lt;class &apos;str&apos;&gt; = type(&apos;HELLO, THERE&apos;)
+
+pytests/test_index.py:26: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="28" name="test_type_list" time="0.001956939697265625"><failure message="AssertionError: type_list must be a of type list
+assert [&quot;i&apos;m&quot;, &apos;a&apos;, &apos;list&apos;] == &lt;class &apos;list&apos;&gt;
+ +  where &lt;class &apos;list&apos;&gt; = type([])">def test_type_list():
+&gt;       assert type_list == type([]), &quot;type_list must be a of type list&quot;
+E       AssertionError: type_list must be a of type list
+E       assert [&quot;i&apos;m&quot;, &apos;a&apos;, &apos;list&apos;] == &lt;class &apos;list&apos;&gt;
+E        +  where &lt;class &apos;list&apos;&gt; = type([])
+
+pytests/test_index.py:30: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="32" name="test_lenght_of_list" time="0.0012819766998291016"><failure message="AssertionError: lenght_of_list must be a list
+assert &lt;class &apos;list&apos;&gt; == &lt;class &apos;int&apos;&gt;
+ +  where &lt;class &apos;list&apos;&gt; = type([&quot;i&apos;m&quot;, &apos;a&apos;, &apos;list&apos;])
+ +  and   &lt;class &apos;int&apos;&gt; = type(10)">def test_lenght_of_list():
+&gt;       assert type(lenght_of_list) == type(10), &quot;lenght_of_list must be a list&quot;
+E       AssertionError: lenght_of_list must be a list
+E       assert &lt;class &apos;list&apos;&gt; == &lt;class &apos;int&apos;&gt;
+E        +  where &lt;class &apos;list&apos;&gt; = type([&quot;i&apos;m&quot;, &apos;a&apos;, &apos;list&apos;])
+E        +  and   &lt;class &apos;int&apos;&gt; = type(10)
+
+pytests/test_index.py:34: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="36" name="test_longest_word_in_list" time="0.001245260238647461"><failure message="AssertionError: longest_word_in_list must be a string
+assert &lt;class &apos;list&apos;&gt; == &lt;class &apos;str&apos;&gt;
+ +  where &lt;class &apos;list&apos;&gt; = type([&quot;i&apos;m&quot;, &apos;a&apos;, &apos;list&apos;])
+ +  and   &lt;class &apos;str&apos;&gt; = type(&apos;&apos;)">def test_longest_word_in_list():
+&gt;       assert type(longest_word_in_list) == type(&quot;&quot;), &quot;longest_word_in_list must be a string&quot;
+E       AssertionError: longest_word_in_list must be a string
+E       assert &lt;class &apos;list&apos;&gt; == &lt;class &apos;str&apos;&gt;
+E        +  where &lt;class &apos;list&apos;&gt; = type([&quot;i&apos;m&quot;, &apos;a&apos;, &apos;list&apos;])
+E        +  and   &lt;class &apos;str&apos;&gt; = type(&apos;&apos;)
+
+pytests/test_index.py:38: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="40" name="test_smallest_number" time="0.0010848045349121094"><failure message="AssertionError: smallest_number must be a number
+assert &lt;class &apos;list&apos;&gt; == &lt;class &apos;int&apos;&gt;
+ +  where &lt;class &apos;list&apos;&gt; = type([1, 3, 4, 78])
+ +  and   &lt;class &apos;int&apos;&gt; = type(10)">def test_smallest_number():
+&gt;       assert type(smallest_number) == type(10), &quot;smallest_number must be a number&quot;
+E       AssertionError: smallest_number must be a number
+E       assert &lt;class &apos;list&apos;&gt; == &lt;class &apos;int&apos;&gt;
+E        +  where &lt;class &apos;list&apos;&gt; = type([1, 3, 4, 78])
+E        +  and   &lt;class &apos;int&apos;&gt; = type(10)
+
+pytests/test_index.py:42: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="44" name="test_sum_of_numbers" time="0.0011734962463378906"><failure message="AssertionError: sum_of_numbers must be a number
+assert &lt;class &apos;list&apos;&gt; == &lt;class &apos;int&apos;&gt;
+ +  where &lt;class &apos;list&apos;&gt; = type([1, 2, 3, 5])
+ +  and   &lt;class &apos;int&apos;&gt; = type(10)">def test_sum_of_numbers():
+&gt;       assert type(sum_of_numbers) == type(10), &quot;sum_of_numbers must be a number&quot;
+E       AssertionError: sum_of_numbers must be a number
+E       assert &lt;class &apos;list&apos;&gt; == &lt;class &apos;int&apos;&gt;
+E        +  where &lt;class &apos;list&apos;&gt; = type([1, 2, 3, 5])
+E        +  and   &lt;class &apos;int&apos;&gt; = type(10)
+
+pytests/test_index.py:46: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="48" name="test_boolean_compare" time="0.0007965564727783203"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="52" name="test_number_compare" time="0.0007681846618652344"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="57" name="test_string_compare" time="0.0009560585021972656"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="62" name="test_list_compare" time="0.0008852481842041016"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="69" name="test_logical_compare" time="0.00077056884765625"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="78" name="test_identity_compare" time="0.0008311271667480469"></testcase></testsuite>
